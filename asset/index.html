@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>piano</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div>
+      <h3 class="h3-content">piano kuy</h3>
+      <div id="note"></div>
+    </div>
+
+    <script>
+      const chords = ["a", "c", "d", "e", "f"];
+      const note = document.getElementById("note");
+
+      chords.forEach((chord) => {
+        const button = document.createElement("button");
+
+        button.innerText = chord
+        button.addEventListener("click", () => {
+            const sound = new Audio(`/asset/${chord}.wav`)
+            sound.play()
+        })
+
+        note.appendChild(button);
+      });
+    </script>
+  </body>
+</html>

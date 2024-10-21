@@ -1,0 +1,18 @@
+button {
+    background-color: aqua;
+    color: black;
+    margin: 3px;
+    height: 20rem;
+    width: 10%;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgba(0, 85, 255, 0.691);
+    transition:  .3s all ease-in-out;
+}
+
+.h3-content{
+    font-size: 25px;
+}
+
